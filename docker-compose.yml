@@ -1,0 +1,16 @@
+version: '3.6'
+services:
+  kusama:
+    container_name: 'kusama_node'
+    image: polkasource/substrate-client:kusama-latest
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100M"
+        max-file: "2"
+    volumes:
+      - ./data_ksmcc2:/data/chains
+    ports:
+      - "127.0.0.1:9933:9933"
+      - "127.0.0.1:9944:9944"
+      - "127.0.0.1:30333:30333"
