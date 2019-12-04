@@ -14,4 +14,5 @@ services:
       - "127.0.0.1:9933:9933"
       - "127.0.0.1:9944:9944"
       - "127.0.0.1:30333:30333"
-    command: ['--name', 'my loved kusama node']
+#    command: ['--light', '--name', 'Progressbar Cowork','--out-peers','50','--in-peers','50']
+    command: ['--name', 'Progressbar Cowork','--out-peers','60','--in-peers','60']
