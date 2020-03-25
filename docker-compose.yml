@@ -15,4 +15,4 @@ services:
       - "0.0.0.0:9944:9944"
       - "127.0.0.1:30333:30333"
 #    command: ['--light', '--name', 'StarMesh','--out-peers','50','--in-peers','50']
-    command: ['--name', 'KodaDot','--out-peers','50','--in-peers','50','--ws-external','--rpc-cors','all']
+    command: ['--name', 'KodaDot','--out-peers','50','--in-peers','50','--ws-external','--rpc-external','--rpc-cors','all']
