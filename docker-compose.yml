@@ -12,7 +12,7 @@ services:
       - ./data_ksmcc2:/data/chains
     ports:
       - "127.0.0.1:9933:9933"
-      - "127.0.0.1:9944:9944"
+      - "0.0.0.0:9944:9944"
       - "127.0.0.1:30333:30333"
-#    command: ['--light', '--name', 'Progressbar Cowork','--out-peers','50','--in-peers','50']
-    command: ['--name', 'Progressbar Cowork','--out-peers','60','--in-peers','60']
+#    command: ['--light', '--name', 'StarMesh','--out-peers','50','--in-peers','50']
+    command: ['--name', 'KodaDot','--out-peers','50','--in-peers','50','--ws-external','--rpc-cors','all']
