@@ -15,4 +15,4 @@ services:
       - "0.0.0.0:9933:9933"
       - "0.0.0.0:9944:9944"
       - "127.0.0.1:30333:30333"
-    command: ['--dev','--ws-external','--rpc-cors','all', '--wasm-execution=Compiled','--alice']
+    command: ['--dev','--ws-external','--rpc-cors','all', '--wasm-execution=Compiled','--alice', '--rpc-methods=Unsafe']
