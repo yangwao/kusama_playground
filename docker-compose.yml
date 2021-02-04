@@ -1,4 +1,4 @@
-version: '3.6'
+version: '3.8'
 services:
   kusama:
     container_name: 'kusama_node'
@@ -10,9 +10,9 @@ services:
         max-size: "100M"
         max-file: "2"
     volumes:
-      - ./data_ksmcc2:/data/chains
+      - ./data_ksmcc3:/polkadot
     ports:
       - "127.0.0.1:9933:9933"
       - "0.0.0.0:9944:9944"
       - "127.0.0.1:30333:30333"
-    command: ['--chain','kusama','--name', 'KodaDot','--out-peers','20','--in-peers','20','--ws-external','--rpc-external','--rpc-cors','all', '--wasm-execution=Compiled' ]
+    command: ['--chain','kusama','--name', 'KodaDot','--out-peers','30','--in-peers','30','--ws-external','--rpc-external','--rpc-cors','all', '--wasm-execution=Compiled' ]
